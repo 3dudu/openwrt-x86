@@ -190,5 +190,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
 
     - name: TG推送
-      run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=恭喜主人X86-openwrt5.15自用版固件编译完成！%0A编译时间：${{ env.DATE }}%0A下载地址：https://github.com/firkerword/openwrt-Exclusive/releases/tag/${{ env.TAG_TIME }}"
+      run: curl "http://xyztech.good365.net:1880/send?title=恭喜主人X86-openwrt5.15自用版固件编译完成&url=https://github.com/firkerword/openwrt-Exclusive/releases/tag/${{ env.TAG_TIME }}&text=编译时间：${{ env.DATE }}"
 
+      
+      
