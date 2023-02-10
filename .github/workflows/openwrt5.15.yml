@@ -165,7 +165,7 @@ jobs:
         allowUpdates: true
         tag: ${{ env.TAG_TIME }}
         commit: main
-        token: ${{ secrets.RELEASE_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           功能介绍：含Alist、Dockerman、定时设置、vssr、passwall、openclash、mosdns、lucky、微信推送等插件。
           [固件源码](https://github.com/immortalwrt/immortalwrt/tree/master)
@@ -187,7 +187,7 @@ jobs:
         keep_latest: 9
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: TG推送
       run: curl "http://xyztech.good365.net:1880/send?title=恭喜主人X86-openwrt5.15自用版固件编译完成&url=https://github.com/firkerword/openwrt-Exclusive/releases/tag/${{ env.TAG_TIME }}&text=编译时间：${{ env.DATE }}"
