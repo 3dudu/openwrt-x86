@@ -172,7 +172,7 @@ jobs:
           由衷感谢所有为openwrt无私奉献的大佬们
           📥 固件下载
           🔗 [国外WT网盘](${{ steps.wetransfer.outputs.url }})
-        artifacts: ${{ env.FIRMWARE }}/*
+        artifacts: "${{ env.FIRMWARE }}/*"
 
     - name: 清理旧的workflow
       uses: FunctionXJB/delete-workflow-runs@main
