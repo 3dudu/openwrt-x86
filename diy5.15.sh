@@ -23,10 +23,10 @@ git clone https://github.com/fw876/helloworld.git package/ssr
  find ./ | grep Makefile | grep xray-plugin | xargs rm -f
 svn co https://github.com/sbwml/openwrt_helloworld/trunk/xray-plugin package/xray-plugin
 #git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong
-git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/luci-theme-argon-18.06
-git clone https://github.com/gngpp/luci-theme-neobird.git package/luci-theme-neobird
-git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
+#git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/luci-theme-argon-18.06
+#git clone https://github.com/gngpp/luci-theme-neobird.git package/luci-theme-neobird
+#git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 
 # find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
  find ./ | grep Makefile | grep mosdns | xargs rm -f
