@@ -166,7 +166,7 @@ jobs:
         commit: main
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
-          功能介绍：含vssr、passwall、openclash、mosdns、lucky、微信推送等插件，为最基础的旁路由版本。
+          功能介绍：含vssr、passwall、snmpd、zerotier、微信推送等插件，为最基础的旁路由版本。
           [固件源码](https://github.com/immortalwrt/immortalwrt/tree/master)
           由衷感谢所有为openwrt无私奉献的大佬们
           
