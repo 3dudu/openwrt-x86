@@ -15,6 +15,10 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makef
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
+echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
+
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
@@ -31,10 +35,10 @@ git clone https://github.com/tty228/luci-app-wechatpush.git package/luci-app-wec
 # git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 # git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-bypass package/luci-app-bypass
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 # git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+#git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 # git clone https://github.com/dwj0/luci-app-sms-tool.git package/luci-app-sms-tool
 # git clone -b master https://github.com/vernesong/OpenClash.git package/OpenClash
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
