@@ -18,6 +18,7 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makef
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
+echo "src-git wechatpush https://github.com/tty228/luci-app-wechatpush.git;main" >> "feeds.conf.default"
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
@@ -27,7 +28,7 @@ git clone https://github.com/fw876/helloworld.git package/ssr
 git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong
 # git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/luci-theme-argon-18.06
-git clone https://github.com/tty228/luci-app-wechatpush.git package/luci-app-wechatpush
+# git clone https://github.com/tty228/luci-app-wechatpush.git package/luci-app-wechatpush
 #git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush.git
 # git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
 # git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
