@@ -18,6 +18,7 @@ sed -i 's/KERNEL_PATCHVER:=6.2/KERNEL_PATCHVER:=5.15/g' ./target/linux/x86/Makef
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
+echo "src-git wechatpush https://github.com/tty228/luci-app-wechatpush.git;main" >> "feeds.conf.default"
 
 git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git  package/luci-app-vssr
@@ -37,7 +38,7 @@ svn co https://github.com/sbwml/openwrt_helloworld/trunk/xray-plugin package/xra
  find ./ | grep Makefile | grep mosdns | xargs rm -f
 # git clone https://github.com/firkerword/openwrt-mos.git package/openwrt-mos
 #git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
-git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+#git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 #git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
 #git clone https://github.com/firkerword/luci-app-lucky.git package/lucky
 # git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
